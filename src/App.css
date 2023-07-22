@@ -339,6 +339,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .projects {
   margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
   /*background-color: black;*/
 }
