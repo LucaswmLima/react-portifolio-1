@@ -314,6 +314,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+
+.download-cv{
+    text-decoration: none;
+    cursor: auto;
+  }
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -346,7 +352,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 14px auto 40px auto;
   text-align: center;
   width: 56%;
 }

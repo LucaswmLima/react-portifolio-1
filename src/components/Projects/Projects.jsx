@@ -3,6 +3,7 @@ import { projectsList } from "./ProjectsList";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
+
 const chunkArray = (array, chunkSize) => {
   const chunks = [];
   for (let i = 0; i < array.length; i += chunkSize) {
