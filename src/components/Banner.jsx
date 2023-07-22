@@ -56,7 +56,7 @@ export const Banner = () => {
       <Container>
         <Row className="align-itens-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Bem vindo(a) ao meu Portifolio</span>
+            <span className="tagline">Bem vindo(a) ao meu Portfólio</span>
             <h1>
               <span>{text}</span>
             </h1>
