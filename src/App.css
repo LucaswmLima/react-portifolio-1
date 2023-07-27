@@ -98,12 +98,6 @@ p.danger {
 }
 
 /************ Navbar Css ************/
-
-.nav-logo {
-  width: 70%;
-  height: auto;
-}
-
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -253,6 +247,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+
+
+@media (max-width: 992px) {
+  nav.navbar.social-icon a {
+    width: 30px;
+    height: 30px;
+  }
+  
+  nav.navbar .vvd {
+    padding: 10px 20px;
+  }
+ 
+}
+
 /************ Banner Css ************/
 
 .banner {
@@ -281,7 +289,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  min-height: 140px;
+  min-height: 200px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
@@ -315,10 +323,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
-.download-cv{
-    text-decoration: none;
-    cursor: auto;
+.download-cv {
+  text-decoration: none;
+  cursor: auto;
+}
+
+@media (max-width: 1200px) {
+  .download-link-col {
+    width: 45% !important;
   }
+
+  .download-link-row {
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner img {
+    display: none;
+  }
+
+  .banner h1 {
+    font-size: 45px;
+  }
+
+  .banner h1 {
+    min-height: 140px;
+  }
+}
 
 @keyframes updown {
   0% {
@@ -532,7 +565,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #151515;
   background: #fff;
   border: 1px solid #fff;
-
 }
 /************ Skills Css ************/
 
@@ -583,6 +615,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .react-multiple-carousel__arrow--right,
 .react-multiple-carousel__arrow--left {
   transform: translateY(-25px);
+}
+
+@media (max-width: 992px) {
+  .react-multi-carousel-list {
+    height: 18rem;
+  }
+
 }
 
 /************ Contact Css ************/
@@ -686,4 +725,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .footer .social-icon {
   margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  .footer-logo-col{
+    margin-top: 20px;
+  }
 }

@@ -8,7 +8,7 @@ import CV from "../../src/assets/cv.pdf";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Olá, sou o Lucas, Front-end Developer"];
+  const toRotate = [", Front-end Developer"];
   const [text, setText] = useState("");
   const period = 2000;
   const [index, setIndex] = useState(1);
@@ -58,6 +58,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Bem vindo(a) ao meu Portfólio</span>
             <h1>
+              Olá, sou o Lucas
               <span>{text}</span>
             </h1>
             <p>
@@ -65,8 +66,8 @@ export const Banner = () => {
               tudo relacionado a tecnologia e ciência. Atualmente a procura de
               uma oportunidade na area.
             </p>
-            <Row>
-              <Col xs={12} md={6} xl={5}>
+            <Row className="download-link-row">
+              <Col className="download-link-col" xs={12} md={6} xl={5}>
                 <Link to="connect">
                   <button>
                     Vamos conversar
@@ -74,7 +75,7 @@ export const Banner = () => {
                   </button>
                 </Link>
               </Col>
-              <Col xs={12} md={6} xl={5}>
+              <Col className="download-link-col" xs={12} md={6} xl={5}>
                 <a className="download-cv" href={CV} download>
                   <button>
                     Download CV
