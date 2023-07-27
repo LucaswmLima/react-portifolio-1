@@ -14,9 +14,24 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+            <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/lucaswmlima/"
+                >
+                  <img src={navIcon1} alt="" />
+                </a>
+                <a
+                  target="blank"
+                  href="https://www.facebook.com/Lucaslimacontato"
+                >
+                  <img src={navIcon2} alt="" />
+                </a>
+                <a
+                  target="blank"
+                  href="https://www.instagram.com/lucaswilliamml/"
+                >
+                  <img src={navIcon3} alt="" />
+                </a>
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
           </Col>
