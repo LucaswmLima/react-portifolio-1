@@ -31,11 +31,11 @@ export const projectsList = [
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
   },
   {
-    title: "Landing Page Restaurente",
-    description: "Landing Page de um restaurente desenvolvida em React",
+    title: "Landing Page Restaurante",
+    description: "Landing Page de um restaurante desenvolvida em React",
     imgUrl: landingPage1Img,
-    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
-    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
+    linkOnline: "https://react-landingpage-1.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
   },
   {
     title: "TO-DO List",
@@ -116,14 +116,14 @@ export const projectsList = [
     linkGitHub: "https://github.com/LucaswmLima/java-fuel-calculator",
   },
   {
-    title: "Portfólio pessoal 1",
+    title: "Portfólio Pessoal 1",
     description: "Portfólio pessoal 1 desenvolvido em React",
     imgUrl: portifolio1,
     linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/python-lucy-assistant",
   },
   {
-    title: "Portfólio pessoal 2",
+    title: "Portfólio Pessoal 2",
     description: "Portfólio pessoal 2 desenvolvido em React",
     imgUrl: portifolio2,
     linkOnline: "https://portfolio-lucaswilliam.vercel.app/#portfolio",
