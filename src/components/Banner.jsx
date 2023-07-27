@@ -66,8 +66,8 @@ export const Banner = () => {
               tudo relacionado a tecnologia e ciência. Atualmente a procura de
               uma oportunidade na area.
             </p>
-            <Row className="download-link-row">
-              <Col className="download-link-col" xs={12} md={6} xl={5}>
+            <Row>
+              <Col xs={12} md={6} xl={5}>
                 <Link to="connect">
                   <button>
                     Vamos conversar
@@ -75,7 +75,7 @@ export const Banner = () => {
                   </button>
                 </Link>
               </Col>
-              <Col className="download-link-col" xs={12} md={6} xl={5}>
+              <Col xs={12} md={6} xl={5}>
                 <a className="download-cv" href={CV} download>
                   <button>
                     Download CV
