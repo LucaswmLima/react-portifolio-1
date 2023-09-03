@@ -39,7 +39,7 @@ export const projectsList = [
   },
   {
     title: "TO-DO List",
-    description: "List de tarefas desenvolvida em React com Typescript",
+    description: "Lista de tarefas desenvolvida em React com Typescript",
     imgUrl: todoListImg,
     linkOnline: "https://todo-list-01.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
@@ -126,7 +126,7 @@ export const projectsList = [
     title: "Portfólio Pessoal 2",
     description: "Portfólio pessoal 2 desenvolvido em React",
     imgUrl: portifolio2,
-    linkOnline: "https://portfolio-lucaswilliam.vercel.app/#portfolio",
+    linkOnline: "https://portfolio-lucaswilliam-2.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-portfolio",
   },
 ];
