@@ -1,19 +1,33 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import headerImg from "../assets/img/pipe.png";
 import { Link } from "react-scroll";
 import CV from "../../src/assets/cv.pdf";
+import star from "../assets/img/star.png";
+import mushroom from "../assets/img/mushroom.png";
+import fireFlower from "../assets/img/fire-flower.png";
 
 export const Banner = () => {
+
+  // Função para trocar as imagens que saem pelo cano
+  const [imageIndex, setImageIndex] = useState(0);
+  const images = [star, mushroom, fireFlower];
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Função para fazer o efeito de digitar
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [", Front-end Developer"];
+  const toRotate = [" Front-end Developer"];
   const [text, setText] = useState("");
   const period = 2000;
   const [index, setIndex] = useState(1);
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-
+  
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -58,35 +72,29 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Bem vindo(a) ao meu Portfólio</span>
             <h1>
-              Olá, sou o Lucas
+              Olá, sou o Lucas, <br />
               <span>{text}</span>
             </h1>
-            <p>
-              Desenvolvedor formado em engenharia da computação e apaixonado por
-              tudo relacionado a tecnologia e ciência. Atualmente a procura de
-              uma oportunidade na area.
-            </p>
             <Row className="download-link-row">
-              <Col  className="download-link-col" xs={12} md={6} xl={5}>
+              <Col className="download-link-col" xs={12} md={6} xl={4}>
                 <Link to="connect">
                   <button>
                     Vamos Conversar
-                    <ArrowRightCircle size={25} />
                   </button>
                 </Link>
               </Col>
-              <Col  className="download-link-col" xs={12} md={6} xl={5}>
+              <Col className="download-link-col" xs={12} md={6} xl={4}>
                 <a className="download-cv" href={CV} download>
                   <button>
                     Download CV
-                    <ArrowRightCircle size={25} />
                   </button>
                 </a>
               </Col>
             </Row>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Headder Img" />
+          <Col className="pipe-container" xs={12} md={6} xl={5}>
+            <img className="pipe-item" src={images[imageIndex]} alt="Imagem" />
+            <img className="pipe" src={headerImg} alt="Headder Img" />
           </Col>
         </Row>
       </Container>

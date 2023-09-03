@@ -1,7 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { projectsList } from "./ProjectsList";
 import { ProjectCard } from "./ProjectCard";
-import colorSharp2 from "../../assets/img/color-sharp2.png";
 
 
 const chunkArray = (array, chunkSize) => {
@@ -21,7 +20,6 @@ export const Projects = () => {
         <Row>
           <Col  size={12}>
             <h2>Projetos</h2>
-            <p>Veja abaixo alguns de meus projetos pessoais</p>
           
           <Tab.Container id="projects-tabs" defaultActiveKey={"tab-1"}>
             <Nav
@@ -50,7 +48,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
 };

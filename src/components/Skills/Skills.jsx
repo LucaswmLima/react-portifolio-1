@@ -1,14 +1,18 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { SkillsList } from "./SkillsList";
-import { Container, Row, Col } from "react-bootstrap";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+import { Container, Row, Col,ProgressBar} from "react-bootstrap";
+
+
+function BasicExample() {
+  return <ProgressBar now={60} />;
+}
+
+export default BasicExample;
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -33,29 +37,23 @@ export const Skills = () => {
           <Col>
             <div className="skills-box" id="skills-box">
               <h2>Habilidades</h2>
-              <p>
-                As tecnologias que tenho conhecimento.
-              </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                infiniteLoop={true}
                 showDots={true}
+                autoPlaySpeed={3000}
+                customTransition="all 1s"
+                autoPlay={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass="custom-dot-list-style"
               >
                 {SkillsList.map((skill, index) => (
                   <div key={index}>
-                    <CircularProgressbar
-                      value={skill.percentage}
-                      text={`${skill.percentage}%`}
-                      styles={buildStyles({
-                        pathColor: `#6C31A5`,
-                        textColor: "#fff",
-                        trailColor: "#2A2A2A",
-                        strokeLinecap: "round",
-                      })}
-                    />
+                    <img className="skill-language-icon" src={skill.icon} alt="skill" />
                     <h4>{skill.title}</h4>
+                    <ProgressBar now={skill.percentage}/>
+                    
                   </div>
                 ))}
               </Carousel>
