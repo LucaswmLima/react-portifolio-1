@@ -84,7 +84,7 @@ export const Banner = () => {
                 </Link>
               </Col>
               <Col className="download-link-col" xs={12} md={6} xl={4}>
-                <a className="download-cv" href={CV} download>
+                <a className="download-cv" href={CV} download="CV-Lucas-William">
                   <button>
                     Download CV
                   </button>

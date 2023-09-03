@@ -40,9 +40,8 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                infiniteLoop={true}
                 showDots={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={2000}
                 customTransition="all 1s"
                 autoPlay={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
