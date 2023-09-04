@@ -4,15 +4,18 @@ import { Banner } from "./components/Banner";
 import { Projects } from "./components/Projects/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Skills } from './components/Skills/Skills';
+import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <Banner/>
-      <Skills/>
+      <About/>
+      <Skills/>      
       <Projects/>
       <Contact/>
       <Footer/>

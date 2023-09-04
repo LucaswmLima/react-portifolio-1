@@ -18,7 +18,7 @@ html {
 body {
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #232055 !important;
   color: #fff !important;
   font-family: "Press Start 2P" !important;
   font-weight: 400;
@@ -578,6 +578,85 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .projects h4 {
   font-size: 27px;
 }
+
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: 76%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background-color: var(--color-bg-variant);
+  display: grid;
+  /*place-items: center;*/
+
+
+}
+
+.about__me-image {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+  .about__container {
+      grid-template-columns: 1fr;
+      gap: 0;
+  }
+
+  .about__me {
+      width: 30%;
+      margin: 2rem auto 4rem;
+  }
+
+  .about__me-image {
+      width: 26vw;
+
+  }
+
+  .about__content p {
+      margin: 1rem 0 1.5rem;
+  }
+
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 600px) {
+  .about__me {
+      width: 65%;
+      margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .about__content{
+      text-align: center;
+  }
+
+  .about__content p{
+      margin: 1.5rem 0;
+  }
+
+  .about__me-image {
+      width: 59vw;
+
+  }
+
+  .about__card{
+      padding: 1rem;
+  }
+
+
+}
+
 /************ Skills Css ************/
 
 .skills {
@@ -591,12 +670,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skills-box {
-  background: #00820e;
+  background: #7e431d;
+  border: 8px solid #3c200e;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
-  border: 8px solid #005e04;
 }
 
 .skills h2 {
@@ -646,6 +725,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .react-multi-carousel-list {
     height: 18rem;
   }
+}
+
+/************ About Css ************/
+
+.about {
+  background-color: #232055;
+  padding: 0 0 50px 0;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.about h4 {
+  margin-top: 10px;
+}
+
+.about-box {
+  background: #7e431d;
+  border: 8px solid #3c200e;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+  
+}
+
+.about h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.about p {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  line-height: 1.7em;
+  margin: 14px 0 40px 0;
 }
 
 /************ Contact Css ************/
