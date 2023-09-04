@@ -128,5 +128,6 @@ export const projectsList = [
     imgUrl: portifolio2,
     linkOnline: "https://portfolio-lucaswilliam-2.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-portfolio",
-  },
+  }
+  
 ];

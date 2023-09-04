@@ -25,6 +25,7 @@ export const About = () => {
                     curiosidades. Atualmente, estou em busca de uma oportunidade
                     na área de desenvolvimento, onde posso aplicar meu
                     conhecimento para criar soluções inovadoras.
+                    </p>
                     <p>
                       Hoje já tenho conhecimento em tecnologias como JavaScript,
                       ReactJS, SQL, Flutter, entre outras.
@@ -34,7 +35,7 @@ export const About = () => {
                       emprego ou colaborações profissionais, fique à vontade
                       para entrar em contato comigo.
                     </p>
-                  </p>
+                  
                 </div>
               </div>
             </div>
