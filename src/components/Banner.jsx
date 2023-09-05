@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/pipe.png";
 import { Link } from "react-scroll";
-import CV from "../../src/assets/cv.pdf";
+import CV from "../../src/assets/lucas-william-CV.pdf";
 import star from "../assets/img/star.png";
 import mushroom from "../assets/img/mushroom.png";
 import fireFlower from "../assets/img/fire-flower.png";
