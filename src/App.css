@@ -18,7 +18,7 @@ html {
 body {
   overflow-x: hidden;
   position: relative;
-  background-color: #232055 !important;
+  background-color: #05141B !important;
   color: #fff !important;
   font-family: "Press Start 2P" !important;
   font-weight: 400;
@@ -94,7 +94,10 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #1c246d;
+  background-image: url("./assets/img/home/banner-bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -235,7 +238,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 200px 0 100px 0;
-  background-image: url("./assets/img/banner-bg.png");
+  background-image: url("./assets/img/home/banner-bg.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -315,24 +318,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.pipe-container {
-  position: relative;
-}
-
-.pipe {
-  translate: 50px 350px;
-  position: absolute;
-  width: 300px;
-  height: auto;
-}
-
-.pipe-item {
-  translate: 100px 360px;
-  position: absolute;
-  width: 200px;
-  height: auto;
-  animation: itemUpDownAnimation 5s infinite;
-}
 
 .download-cv {
   text-decoration: none;
@@ -517,7 +502,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills Css ************/
 
 .skills {
-  background-color: #232055;
+  background-color: #05141B;
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -527,9 +512,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skills-box {
-  background: #7e431d;
-  border: 8px solid #3c200e;
-  border-radius: 64px;
+  background: #212E3F;
+  box-shadow: 15px 0 #212E3F, -15px 0 #212E3F, 0 -15px #212E3F, 0 15px #212E3F;
+  border-right: 50px solid #2b3c4d;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
@@ -587,7 +572,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ About Css ************/
 
 .about {
-  background-color: #232055;
+  background-color: #05141B;
+  
   padding: 0 0 50px 0;
   position: relative;
   margin-bottom: 5rem;
@@ -598,12 +584,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about-box {
-  background: #7e431d;
-  border: 8px solid #3c200e;
-  border-radius: 64px;
+  background: #212E3F;
+  box-shadow: 15px 0 #212E3F, -15px 0 #212E3F, 0 -15px #212E3F, 0 15px #212E3F;
+  border-right: 50px solid #2b3c4d;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 30px;
   
 }
 
@@ -703,9 +689,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input,
 .contact form textarea {
   width: 100%;
-  background: #7e431d;
-  border: 3px solid #3c200e;
-  border-radius: 5px;
+  background: #212E3F;
+  border-right: 20px solid #2b3c4d;
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 400;
@@ -715,7 +700,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input:focus,
 .contact form textarea:focus {
-  background:  #ac6638;;
+  background:  #425369;;
   color: #000000;
 }
 .contact form input::placeholder,
@@ -763,12 +748,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("./assets/img/home/banner-bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #b8b8b8;
+  color: #fff;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
@@ -781,3 +770,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-top: 20px !important;
   }
 }
+
+/**************CAT**********/

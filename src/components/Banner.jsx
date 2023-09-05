@@ -1,23 +1,11 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/pipe.png";
 import { Link } from "react-scroll";
-import CV from "../../src/assets/lucas-william-CV.pdf";
-import star from "../assets/img/star.png";
-import mushroom from "../assets/img/mushroom.png";
-import fireFlower from "../assets/img/fire-flower.png";
+import CV from "../../src/assets/lucas-lima-CV.pdf";
+import catImage from '../assets/img/home/cat.png';
+
 
 export const Banner = () => {
-
-  // Função para trocar as imagens que saem pelo cano
-  const [imageIndex, setImageIndex] = useState(0);
-  const images = [star, mushroom, fireFlower];
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(intervalId);
-  }, []);
 
   // Função para fazer o efeito de digitar
   const [loopNum, setLoopNum] = useState(0);
@@ -90,11 +78,10 @@ export const Banner = () => {
                   </button>
                 </a>
               </Col>
+              
             </Row>
           </Col>
-          <Col className="pipe-container" xs={12} md={6} xl={5}>
-            <img className="pipe-item" src={images[imageIndex]} alt="Imagem" />
-            <img className="pipe" src={headerImg} alt="Headder Img" />
+          <Col className="side-image-container" >
           </Col>
         </Row>
       </Container>
