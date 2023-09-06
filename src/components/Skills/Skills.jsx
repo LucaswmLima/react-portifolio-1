@@ -2,13 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { SkillsList } from "./SkillsList";
 import { Container, Row, Col,ProgressBar} from "react-bootstrap";
-
-
-function BasicExample() {
-  return <ProgressBar now={60} />;
-}
-
-export default BasicExample;
+import { useState, useEffect } from 'react';
 
 export const Skills = () => {
   const responsive = {
@@ -30,12 +24,35 @@ export const Skills = () => {
     },
   };
 
+  const [bgColor, setBgColor] = useState('#212E3F');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 1200 && window.scrollY < 2000) {
+        setBgColor('#BDC961');
+      } else {
+        setBgColor('#212E3F');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const containerStyle = {
+    backgroundColor: bgColor,
+    transition: 'background-color 0.5s ease'
+  };
+
   return (
     <section className="skills" id="skills">
       <Container>
         <Row>
           <Col>
-            <div className="skills-box" id="skills-box">
+            <div className="skills-box" id="skills-box" style={containerStyle}>
               <h2>Habilidades</h2>
               <Carousel
                 responsive={responsive}
