@@ -4,35 +4,13 @@ import ME from "../assets/img/about/me-about.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
 export const About = () => {
-  const [bgColor, setBgColor] = useState('#212E3F');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 400 && window.scrollY < 1200) {
-        setBgColor('#BDC961');
-      } else {
-        setBgColor('#212E3F');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const containerStyle = {
-    backgroundColor: bgColor,
-    transition: 'background-color 0.5s ease'
-  };
 
   return (
     <section className="about" id="about">
       <Container>
         <Row>
           <Col>
-            <div className="about-box" id="about-box" style={containerStyle}>
+            <div className="about-box" id="about-box">
               <h2>Sobre Mim</h2>
               <div className="container about__container">
                 <div className="about__me">

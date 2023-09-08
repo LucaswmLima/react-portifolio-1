@@ -24,35 +24,13 @@ export const Skills = () => {
     },
   };
 
-  const [bgColor, setBgColor] = useState('#212E3F');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 1200 && window.scrollY < 2000) {
-        setBgColor('#BDC961');
-      } else {
-        setBgColor('#212E3F');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const containerStyle = {
-    backgroundColor: bgColor,
-    transition: 'background-color 0.5s ease'
-  };
-
+ 
   return (
     <section className="skills" id="skills">
       <Container>
         <Row>
           <Col>
-            <div className="skills-box" id="skills-box" style={containerStyle}>
+            <div className="skills-box" id="skills-box">
               <h2>Habilidades</h2>
               <Carousel
                 responsive={responsive}
