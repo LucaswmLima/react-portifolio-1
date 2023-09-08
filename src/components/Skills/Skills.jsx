@@ -13,6 +13,7 @@ export const Skills = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
+      slidesToSlide: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -36,7 +37,7 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 showDots={true}
-                autoPlaySpeed={2000}
+                autoPlaySpeed={5000}
                 customTransition="all 1s"
                 autoPlay={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -46,7 +47,7 @@ export const Skills = () => {
                   <div key={index}>
                     <img className="skill-language-icon" src={skill.icon} alt="skill" />
                     <h4>{skill.title}</h4>
-                    <ProgressBar now={skill.percentage}/>
+                    {/* <ProgressBar now={skill.percentage}/>*/}
                     
                   </div>
                 ))}

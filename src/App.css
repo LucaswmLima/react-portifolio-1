@@ -19,7 +19,7 @@
   --banner-font-color: #fbfbfd;
 
   /*Font sizes*/
-  --banner-font-size: 60px;
+  --banner-font-size: 70px;
 }
 
 * {
@@ -263,22 +263,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: auto;
 }
-.banner .tagline {
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  padding: 18px 34px;
-  background: #ffa848;
-  box-shadow: 6px 0 #231f20, -6px 0 #e85f17, 0 -6px #e85f17, 0 6px #231f20;
-  font-size: 15px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
+
 .banner h1 {
   font-size: var(--banner-font-size);
   font-weight: 400;
   color: var(--banner-font-color);
   letter-spacing: 0.8px;
-  min-height: 200px;
+  min-height: 300px;
   line-height: 1.3;
   margin-bottom: 15rem;
   margin-top: 30px;
@@ -295,19 +286,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%
 }*/
 .banner button {
-  background: #ffa848;
   color: #fff;
-  box-shadow: 6px 0 #231f20, -6px 0 #e85f17, 0 -6px #e85f17, 0 6px #231f20;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 20px;
   margin-top: 60px;
+  letter-spacing: 0.8px;
   display: flex;
   align-items: center;
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  padding: 18px 34px;
-  height: 50px;
-  width: 200px;
 }
 .banner button svg {
   font-size: 25px;
@@ -315,11 +300,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover {
-  animation: upDownAnimation 0.3s; /* A animação dura 0.3 segundos */
-  color: #231f20;
+.banner button:hover svg {
+  margin-left: 25px;
 }
-
 @keyframes itemUpDownAnimation {
   0% {
     transform: translateY(0); /* Comece na posição original */
@@ -366,7 +349,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .banner h1 {
-    min-height: 110px;
+    min-height: 180px;
   }
 
   .banner .tagline {
@@ -402,32 +385,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
-.projects .nav.nav-pills{
-  gap: 2rem;
-  width: 70%;
+.nav-pills {
+  background-color: transparent;
+  border: none;
+  justify-content: space-around;
+  gap: .5rem;
 }
 
-.projects .nav.nav-pills .nav-link {
-  background: #ffa848;
-  color: #fff;
-  box-shadow: 6px 0 #231f20, -6px 0 #e85f17, 0 -6px #e85f17, 0 6px #231f20;
-  width: 100%;
-  font-size: 17px;
-  font-weight: 500;
+.projects .nav-link {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   position: relative;
-  text-align: center;
-  border-radius: 0px;
-  padding: 15px 25px;
-}
-.projects .nav.nav-pills .nav-link:hover {
-  animation: upDownAnimation 0.3s; /* A animação dura 0.3 segundos */
-  color: #231f20;
-}
-.nav-pills .nav-item {
-  flex: 1;
-  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 10px 20px ;
+  box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+  transition: all .3s cubic-bezier(0,0,.5,1);
+  margin-top: -2rem;
+  gap: 1rem;
 }
 
+.projects .nav-link:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
 
 .proj-imgbx {
   position: relative;
@@ -527,14 +510,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skills h4 {
   margin-top: 10px;
+  text-align: center;
 }
 
 .skills-box {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
   background-color: #fff;
   border-radius: 18px;
   padding: 30px;
@@ -542,6 +521,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: all .3s cubic-bezier(0,0,.5,1);
   margin-top: 2rem;
 }
+
+.skills-box:hover{
+  transform: scale(1.02); /* Aumenta em 10% no hover */
+}
+
 
 .skills h2 {
   font-size: 30px;
@@ -619,6 +603,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 
+.about-box:hover{
+  transform: scale(1.02); /* Aumenta em 10% no hover */
+}
+
 
 .about h2 {
   font-size: 30px;
@@ -628,8 +616,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about p {
   color: #121212;
-  font-weight: 200;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.7em;
   margin: 14px 0 40px 0;
   text-align: justify;
