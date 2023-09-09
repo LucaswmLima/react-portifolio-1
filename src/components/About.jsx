@@ -28,10 +28,6 @@ export const About = () => {
                     conhecimento para criar soluções inovadoras.
                     </p>
                     <p>
-                      Hoje já tenho conhecimento em tecnologias como JavaScript,
-                      ReactJS, SQL, Flutter, entre outras.
-                    </p>
-                    <p>
                       Se estiver interessado em discutir oportunidades de
                       emprego ou colaborações profissionais, fique à vontade
                       para entrar em contato comigo.

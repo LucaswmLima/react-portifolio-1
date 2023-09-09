@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { Link } from "react-scroll";
 import CV from "../../src/assets/lucas-lima-CV.pdf";
+import ME from "../assets/img/home/me.svg"
 
 
 export const Banner = () => {
@@ -51,9 +52,9 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-itens-center">
-          <Col xs={12} md={6} xl={8}>
+          <Col xs={12} md={8}>
             <h1>
-              Olá, sou o Lucas, <br />
+              Olá, sou o Lucas.<br />
               <span>{text}</span>
             </h1>
             <Row className="download-link-row">
@@ -76,7 +77,8 @@ export const Banner = () => {
               
             </Row>
           </Col>
-          <Col className="side-image-container" >
+          <Col  xs={12} md={4} className="side-image-container d-flex justify-content-center" >
+            <img src={ME} alt="ME" />
           </Col>
         </Row>
       </Container>

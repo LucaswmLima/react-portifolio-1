@@ -26,7 +26,7 @@ export const projectsList = [
   },
   {
     title: "Sistema Financeiro",
-    description: "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, tornando assim a gestão financeira mais simples.",
+    description: "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, simplificando a gestão financeira.",
     imgUrl: financialSystemImg,
     linkOnline: "https://sistema-financeiro-lw.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
@@ -40,6 +40,14 @@ export const projectsList = [
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
     technologies: ["Javascript", "Rest API"]
   },
+  {
+    title: "Previsão Do Tempo",
+    description: "Um site de previsão do tempo que fornece informações essenciais. Ele exibe a localização com coordenadas e nome da cidade, juntamente com previsões de uma semana inteira, incluindo temperaturas máximas e mínimas, condições meteorológicas e temperatura. ",
+    imgUrl: weatherSiteImg,
+    linkOnline: "https://lucaswmlima.github.io/javascript-weather-app",
+    linkGitHub: "https://github.com/LucaswmLima/javascript-weather-app",
+    technologies: ["Javascript", "Rest API"]
+  },
   
   
   {
@@ -49,13 +57,7 @@ export const projectsList = [
     linkOnline: "https://todo-list-01.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
   },
-  {
-    title: "Previsão Do Tempo",
-    description: "Um site de previsão do tempo que fornece informações essenciais. Ele exibe a localização com coordenadas e nome da cidade, juntamente com previsões de uma semana inteira, incluindo temperaturas máximas e mínimas, condições meteorológicas e temperatura. ",
-    imgUrl: weatherSiteImg,
-    linkOnline: "https://lucaswmlima.github.io/javascript-weather-app",
-    linkGitHub: "https://github.com/LucaswmLima/javascript-weather-app",
-  },
+  
   {
     title: "Calculadora",
     description:

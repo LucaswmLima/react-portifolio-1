@@ -24,12 +24,12 @@ export const Projects = () => {
           <Tab.Container id="projects-tabs" defaultActiveKey={"tab-1"}>
             <Nav
               variant="pills"
-              className="nav-pills mb-5 justify-content-center align-items-center"
+              className="nav-pills mb-4 mt-5 justify-content-center align-items-center"
               defaultActiveKey="/home"
             >
               {projectsChunks.map((chunk, index) => (
                 <Nav.Item key={index}>
-                  <Nav.Link eventKey={`tab-${index + 1}`}>{index + 1}</Nav.Link>
+                  <Nav.Link href="#projects" eventKey={`tab-${index + 1}`}>{index + 1}</Nav.Link>
                 </Nav.Item>
               ))}
             </Nav>
@@ -44,6 +44,17 @@ export const Projects = () => {
                 </Tab.Pane>
               ))}
             </Tab.Content>
+            <Nav
+              variant="pills"
+              className="nav-pills mt-5 mb-5 justify-content-center align-items-center"
+              defaultActiveKey="/home"
+            >
+              {projectsChunks.map((chunk, index) => (
+                <Nav.Item key={index}>
+                  <Nav.Link href="#projects" eventKey={`tab-${index + 1}`}>{index + 1}</Nav.Link>
+                </Nav.Item>
+              ))}
+            </Nav>
           </Tab.Container>
           
           </Col>
