@@ -1,53 +1,56 @@
 import React, { useState } from "react";
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Row, Button, Container } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl, linkOnline, linkGitHub }) => {
+export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnline, linkGitHub }) => {
   const isOnlineLinkEmpty = !linkOnline;
   const isGitHubLinkEmpty = !linkGitHub;
   const showOnlyOneButton = isOnlineLinkEmpty || isGitHubLinkEmpty;
-  const [imageHovered, setImageHovered] = useState(false);
-
-  const handleImageMouseEnter = () => {
-    setImageHovered(true);
-  };
-
-  const handleImageMouseLeave = () => {
-    setImageHovered(false);
-  };
 
   return (
-    <Col size={12} sm={6} md={4}>
-      <div
-        className="proj-imgbx"
-        onMouseEnter={handleImageMouseEnter}
-        onMouseLeave={handleImageMouseLeave}
-      >
-        <img src={imgUrl} />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
-          <Row
-            className={`align-items-center projects-buttons ${
-              showOnlyOneButton ? "justify-content-center" : ""
-            } ${imageHovered ? "visible" : "invisible"}`}
-          >
-            {!isOnlineLinkEmpty && (
-              <Col size={12} sm={6}>
-                <a href={linkOnline} target="_blank" rel="noopener noreferrer">
-                  <Button>Ver Online</Button>
-                </a>
-              </Col>
-            )}
-            {!isGitHubLinkEmpty && (
-              <Col size={12} sm={6}>
-                <a href={linkGitHub} target="_blank" rel="noopener noreferrer">
-                  <Button>GitHub</Button>
-                </a>
-              </Col>
-            )}
-          </Row>
+    <Container>
+    <Row className=" project-card justify-content-center">
+      <Col className="justify-content-center" md={6} sm={12} >
+        <div className="project-card-img">
+          <img src={imgUrl} />
         </div>
-      </div>
-    </Col>
+      </Col>
+      <Col className="justify-content-center" md={6} sm={12}>
+        <Row className="project-title"> <h4>{title}</h4></Row>
+        <Row className="project-description"><p>{description}</p></Row>
+        <Row md="auto" sm="auto" className="project-techs justify-content-center flex-nowrap">
+  {technologies && technologies.length > 0 ? (
+    technologies.map((item, index) => (
+      <Col key={index} className="text-center">
+        <p>{item}</p>
+      </Col>
+    ))
+  ) : (
+    <p></p>
+  )}
+</Row>
+
+        
+        <Row
+          className={` align-items-end projects-buttons ${showOnlyOneButton ? "justify-content-center" : ""
+            }`}
+        >
+          {!isOnlineLinkEmpty && (
+            <Col xs={12} md={6}>
+              <a href={linkOnline} target="_blank" rel="noopener noreferrer">
+                <Button>Ver Online</Button>
+              </a>
+            </Col>
+          )}
+          {!isGitHubLinkEmpty && (
+            <Col xs={12} md={6}>
+              <a href={linkGitHub} target="_blank" rel="noopener noreferrer">
+                <Button>GitHub</Button>
+              </a>
+            </Col>
+          )}
+        </Row>
+      </Col>
+    </Row>
+    </Container>
   );
 };

@@ -363,10 +363,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 
 .projects {
-  margin-top: 50px;
   margin-bottom: 50px;
   position: relative;
-  /*background-color: black;*/
+  background-color: var(--secondary-bg-color);
   align-items: center;
 }
 .projects h2 {
@@ -375,17 +374,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   margin-bottom: 2rem;
 }
-.projects p {
-  color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 40px auto;
-  text-align: center;
-  width: 56%;
-}
 
-.nav-pills {
+.projects .nav-pills {
   background-color: transparent;
   border: none;
   justify-content: space-around;
@@ -412,55 +402,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #ffffff;
 }
 
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
+.project-card{
+  background-color: #fff;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  transition: all .3s cubic-bezier(0,0,.5,1);
+  margin-bottom: 2rem;
+}
+
+.project-card-img {
+  border-radius: 2.5rem;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin: auto 10px 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1)
 }
 
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-
-.proj-txtx {
-  position: absolute;
+.projects h4 {
+  color: #2d2e32;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
   text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
 }
 
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
+.project-description p {
+  color: #767676;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
 }
 
-.proj-txtx h4 {
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
+.project-techs p {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.1rem;
 
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.8px;
 }
 
 .background-image-right {
@@ -483,20 +461,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   color: #fff;
-  background: #151515;
+  background: #121212;
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 12px;
   margin-bottom: 10px;
   display: inline-block;
 }
 .projects button:hover {
-  color: #151515;
+  color: #121212;
   background: #fff;
-  border: 1px solid #fff;
-}
-
-.projects h4 {
-  font-size: 27px;
+  border: 1px solid #121212;
 }
 
 

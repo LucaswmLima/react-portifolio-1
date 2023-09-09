@@ -18,24 +18,27 @@ import portifolio2 from "../../assets/img/projects/portifolio-2-img.png";
 export const projectsList = [
   {
     title: "Pokedex",
-    description: "Pokedex em Javascript com consumo de API REST",
+    description: "Uma Pokedex interativa que utiliza a base de dados da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
     imgUrl: pokedexImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
+    technologies: ["Javascript", "Rest API"]
   },
   {
     title: "Sistema Financeiro",
-    description: "Sistema financeiro desenvolvido em React com Typescript",
+    description: "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, tornando assim a gestão financeira mais simples.",
     imgUrl: financialSystemImg,
     linkOnline: "https://sistema-financeiro-lw.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
+    technologies: ["React", "Typescript", "Chakra UI"]
   },
   {
     title: "Landing Page Restaurante",
-    description: "Landing Page de um restaurante desenvolvida em React",
+    description: "Um site de restaurante que enfatiza a simplicidade e um design limpo. As imagens dos pratos são dispostas em foco para atrair os olhos dos consumidores e facilitar a escolha. ",
     imgUrl: landingPage1Img,
     linkOnline: "https://react-landingpage-1.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
+    technologies: ["React", "Javascript", "MUI"]
   },
   {
     title: "TO-DO List",
@@ -46,7 +49,7 @@ export const projectsList = [
   },
   {
     title: "Previsão Do Tempo",
-    description: "Site de clima e previsão do tempo com consumo de API REST",
+    description: "Um site de previsão do tempo que fornece informações essenciais. Ele exibe a localização com coordenadas e nome da cidade, juntamente com previsões de uma semana inteira, incluindo temperaturas máximas e mínimas, condições meteorológicas e temperatura. ",
     imgUrl: weatherSiteImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-weather-app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-weather-app",
@@ -102,20 +105,6 @@ export const projectsList = [
     linkGitHub: "https://github.com/LucaswmLima/python-lucy-assistant",
   },
   {
-    title: "Calculadora De Notas",
-    description: "Calculadora de notas desenvolvida em Java",
-    imgUrl: gradeCalculatorImg,
-    linkOnline: "",
-    linkGitHub: "https://github.com/LucaswmLima/java-grade-calculator",
-  },
-  {
-    title: "Calculatora De Combustível",
-    description: "Calculatora de custo de combustível em Java",
-    imgUrl: gasCalculatorImg,
-    linkOnline: "",
-    linkGitHub: "https://github.com/LucaswmLima/java-fuel-calculator",
-  },
-  {
     title: "Portfólio Pessoal 1",
     description: "Portfólio pessoal 1 desenvolvido em React",
     imgUrl: portifolio1,
@@ -129,5 +118,5 @@ export const projectsList = [
     linkOnline: "https://portfolio-lucaswilliam-2.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-portfolio",
   }
-  
+
 ];

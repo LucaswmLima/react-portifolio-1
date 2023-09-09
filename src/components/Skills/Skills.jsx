@@ -2,7 +2,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { SkillsList } from "./SkillsList";
 import { Container, Row, Col,ProgressBar} from "react-bootstrap";
-import { useState, useEffect } from 'react';
 
 export const Skills = () => {
   const responsive = {

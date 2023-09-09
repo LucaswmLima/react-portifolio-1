@@ -9,13 +9,13 @@ import nodeJs from "../../assets/img/skills/nodejs.svg";
 import java from "../../assets/img/skills/java.svg";
 
 export const SkillsList = [
-  { title: "HTML", percentage: 100, icon: html5 },
-  { title: "CSS", percentage: 90, icon: css3 },
-  { title: "Javascript", percentage: 70, icon: javascript },
-  { title: "React", percentage: 70, icon: react },
-  { title: "Python", percentage: 70, icon: python },
-  { title: "C/C++", percentage: 70, icon: cLanguage },
-  { title: "Flutter", percentage: 70, icon: flutter },
-  { title: "Node.js", percentage: 70, icon: nodeJs },
-  { title: "Java", percentage: 30, icon: java },
+  { title: "HTML", icon: html5 },
+  { title: "CSS", icon: css3 },
+  { title: "Javascript", icon: javascript },
+  { title: "React", icon: react },
+  { title: "Python", icon: python },
+  { title: "C/C++", icon: cLanguage },
+  { title: "Flutter", icon: flutter },
+  { title: "Node.js", icon: nodeJs },
+  { title: "Java", icon: java },
 ];

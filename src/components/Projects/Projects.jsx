@@ -12,7 +12,7 @@ const chunkArray = (array, chunkSize) => {
 };
 
 export const Projects = () => {
-  const projectsChunks = chunkArray(projectsList, 6);
+  const projectsChunks = chunkArray(projectsList, 3);
 
   return (
     <section className="projects" id="projects">
@@ -36,15 +36,16 @@ export const Projects = () => {
             <Tab.Content id="slideInUp">
               {projectsChunks.map((chunk, index) => (
                 <Tab.Pane key={index} eventKey={`tab-${index + 1}`}>
-                  <Row>
+                  <Col>
                     {chunk.map((project, projectIndex) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
-                  </Row>
+                  </Col>
                 </Tab.Pane>
               ))}
             </Tab.Content>
           </Tab.Container>
+          
           </Col>
         </Row>
       </Container>
