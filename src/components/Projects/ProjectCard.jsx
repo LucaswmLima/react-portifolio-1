@@ -28,8 +28,7 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
     <p></p>
   )}
 </Row>
-
-        
+       
         <Row
           className={` align-items-end projects-buttons ${showOnlyOneButton ? "justify-content-center" : ""
             }`}

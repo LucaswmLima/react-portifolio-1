@@ -17,12 +17,12 @@ import portifolio2 from "../../assets/img/projects/portifolio-2-img.png";
 
 export const projectsList = [
   {
-    title: "Pokedex",
-    description: "Uma Pokedex interativa que utiliza a base de dados da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
-    imgUrl: pokedexImg,
-    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
-    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
-    technologies: ["Javascript", "Rest API"]
+    title: "Landing Page Restaurante",
+    description: "Um site de restaurante que enfatiza a simplicidade e um design limpo. As imagens dos pratos são dispostas em foco para atrair os olhos dos consumidores e facilitar a escolha. ",
+    imgUrl: landingPage1Img,
+    linkOnline: "https://react-landingpage-1.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
+    technologies: ["React", "Javascript", "MUI"]
   },
   {
     title: "Sistema Financeiro",
@@ -33,13 +33,15 @@ export const projectsList = [
     technologies: ["React", "Typescript", "Chakra UI"]
   },
   {
-    title: "Landing Page Restaurante",
-    description: "Um site de restaurante que enfatiza a simplicidade e um design limpo. As imagens dos pratos são dispostas em foco para atrair os olhos dos consumidores e facilitar a escolha. ",
-    imgUrl: landingPage1Img,
-    linkOnline: "https://react-landingpage-1.vercel.app",
-    linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
-    technologies: ["React", "Javascript", "MUI"]
+    title: "Pokedex",
+    description: "Uma Pokedex interativa que utiliza a base de dados da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
+    imgUrl: pokedexImg,
+    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
+    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
+    technologies: ["Javascript", "Rest API"]
   },
+  
+  
   {
     title: "TO-DO List",
     description: "Lista de tarefas desenvolvida em React com Typescript",
