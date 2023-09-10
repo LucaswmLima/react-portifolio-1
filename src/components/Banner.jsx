@@ -4,6 +4,8 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { Link } from "react-scroll";
 import CV from "../../src/assets/lucas-lima-CV.pdf";
 import ME from "../assets/img/home/me.svg"
+import video1 from "../assets/img/home/banner-bg.mp4"
+
 
 
 export const Banner = () => {
@@ -13,7 +15,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Front-end Developer", "Web Developer"];
+  const toRotate = ["Front-end Developer", "Web Developer"];
   const period = 1000;
 
   useEffect(() => {
@@ -51,6 +53,10 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
+        <div className="video-container">
+        <video src={video1} autoPlay loop muted/>
+        </div>
+      
         <Row className="align-itens-center">
           <Col xs={12} md={8}>
             <h1>
@@ -74,10 +80,10 @@ export const Banner = () => {
                   </button>
                 </a>
               </Col>
-              
+
             </Row>
           </Col>
-          <Col  xs={12} md={4} className="side-image-container d-flex justify-content-center" >
+          <Col xs={12} md={4} className="side-image-container d-flex justify-content-center" >
             <img src={ME} alt="ME" />
           </Col>
         </Row>

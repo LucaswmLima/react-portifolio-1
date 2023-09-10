@@ -262,7 +262,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 200px 0 100px 0;
-  background-color: var(--main-bg-color);
+  /*background-color: var(--main-bg-color);*/
   width: 100%;
   height: auto;
 }
@@ -278,16 +278,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 30px;
   translate: 0 100px;
   display: block;
-  width: 80%
+  width: 100%
 }
-/*
-.banner p {
-  color: #fff;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 80%
-}*/
+
+.banner .video-container{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%; /* Define a largura desejada para a div */
+  max-height: 50rem; /* Define a altura máxima desejada para a div */
+  overflow: hidden; /* Oculta qualquer conteúdo que exceda a altura máxima */
+  z-index: -1;
+}
+
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -371,10 +375,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: var(--secondary-bg-color);
   align-items: center;
 }
+
 .projects h2 {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .projects .nav-pills {
@@ -493,7 +499,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skills {
   background-color: var(--secondary-bg-color);
-  padding: 0 0 50px 0;
+  padding: 0 0 20px 0;
   position: relative;
 }
 
