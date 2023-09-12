@@ -13,9 +13,10 @@ export const SkillsList = [
   { title: "CSS", icon: css3 },
   { title: "Javascript", icon: javascript },
   { title: "React", icon: react },
+  { title: "Node.js", icon: nodeJs },
   { title: "Python", icon: python },
   { title: "C/C++", icon: cLanguage },
-  { title: "Flutter", icon: flutter },
-  { title: "Node.js", icon: nodeJs },
+  { title: "Flutter", icon: flutter },  
   { title: "Java", icon: java },
+
 ];

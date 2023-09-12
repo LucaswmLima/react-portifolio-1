@@ -283,6 +283,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 
+.banner-container{
+  height: 100%;
+}
+
 .banner {
   margin-top: 0;
   padding: 200px 0 100px 0;
@@ -298,8 +302,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   min-height: 300px;
   line-height: 1.3;
-  margin-bottom: 15rem;
-  margin-top: 30px;
   translate: 0 100px;
   display: block;
   width: 100%
@@ -310,8 +312,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0%;
   top: 0%;
   width: 100%;
+  height: 100%;
   /* Define a largura desejada para a div */
-  max-height: 50rem;
+  max-height: 80vh;
   /* Define a altura máxima desejada para a div */
   overflow: hidden;
   /* Oculta qualquer conteúdo que exceda a altura máxima */
@@ -385,10 +388,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 12vh 0 100px;
   }
 
-  .banner img {
-    display: none;
+.banner img {
+  display: none;
+}
 
-  }
+.side-image-container {
+  position: absolute;
+}
+
+.banner .video-container {
+  max-height: 75vh;
+
+}
+
 
   .banner h1 {
     font-size: 35px;

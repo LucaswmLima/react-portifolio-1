@@ -1,6 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { projectsList } from "./ProjectsList";
 import { ProjectCard } from "./ProjectCard";
+import { Link, Element } from 'react-scroll';
+
 
 
 const chunkArray = (array, chunkSize) => {
