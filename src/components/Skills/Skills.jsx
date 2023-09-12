@@ -36,7 +36,7 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 showDots={true}
-                autoPlaySpeed={1500}
+                autoPlaySpeed={2000}
                 customTransition="all .5s"
                 autoPlay={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
