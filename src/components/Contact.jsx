@@ -79,11 +79,8 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
-        <Row className="align-items-center">
-          <Col md={6}>
-            <img src={contactImg} alt="Contact" />
-          </Col>
-          <Col md={6}>
+        <Row className="align-items-center justify-content-center">
+          <Col md={8}>
             <h2>Entre em contato</h2>
             <form onSubmit={handleSubmit}>
               <Row>
