@@ -311,16 +311,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   left: 0%;
   top: 0%;
-  width: 100%;
+  width: auto;
   height: 100%;
   /* Define a largura desejada para a div */
-  max-height: 80vh;
+  max-height: 85vh;
   /* Define a altura máxima desejada para a div */
   overflow: hidden;
   /* Oculta qualquer conteúdo que exceda a altura máxima */
   z-index: -1;
 }
-
 
 .banner button {
   color: #fff;
