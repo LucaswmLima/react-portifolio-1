@@ -112,7 +112,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  /*background-color: var(--navbar-color);*/
+  background-color: var(--navbar-color);
 
 }
 
@@ -284,7 +284,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 
 .banner-container{
-  height: 100%;
+  height: 107%;
 }
 
 .banner {
@@ -314,7 +314,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: auto;
   height: 100%;
   /* Define a largura desejada para a div */
-  max-height: 85vh;
+  max-height: 86vh;
   /* Define a altura máxima desejada para a div */
   overflow: hidden;
   /* Oculta qualquer conteúdo que exceda a altura máxima */
@@ -340,6 +340,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner button:hover svg {
   margin-left: 25px;
+}
+.side-image-container img {
+  position: relative;
+  bottom: 13px;
+  width: auto;
+  height: 500px;
+  transform: translate(0px,120px);
+
 }
 
 @keyframes itemUpDownAnimation {
@@ -650,7 +658,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 30px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
   transition: all .3s cubic-bezier(0, 0, .5, 1);
-  margin-top: -2rem;
+  margin-top: 2rem;
 
 }
 
@@ -690,8 +698,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .about__me {
-    width: 30%;
-    margin: 2rem auto 4rem;
+    width: 100%;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: center;
   }
 
   .about__me-image {
