@@ -34,14 +34,14 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
             }`}
         >
           {!isOnlineLinkEmpty && (
-            <Col xs={12} md={6}>
+            <Col xs={6} md={6}>
               <a href={linkOnline} target="_blank" rel="noopener noreferrer">
                 <Button>Ver Online</Button>
               </a>
             </Col>
           )}
           {!isGitHubLinkEmpty && (
-            <Col xs={12} md={6}>
+            <Col xs={6} md={6}>
               <a href={linkGitHub} target="_blank" rel="noopener noreferrer">
                 <Button>GitHub</Button>
               </a>

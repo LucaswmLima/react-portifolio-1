@@ -123,7 +123,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 8%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -133,6 +133,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  text-wrap: nowrap;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -146,8 +147,9 @@ span.navbar-text {
 }
 
 .social-icon {
-  display: inline-block;
+  display: flex;
   margin-left: 14px;
+  flex-direction: row;
 }
 
 .social-icon a {
@@ -161,6 +163,7 @@ span.navbar-text {
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  
 }
 
 .social-icon a::before {
@@ -280,11 +283,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+@media (max-width: 992px) {
+  .navbar-collapse .navbar-text{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+  }
+  
+  .navbar-collapse .navbar-text button{
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 18px;
+    font-size: .8em;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar-collapse .navbar-nav .navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    margin: 15px 15px;
+    font-size: .8em;
+    opacity: 0.75;
+    margin-bottom: 5px;
+  }
+  
+  .navbar-collapse .social-icon a{
+    width: 36px;
+    height: 36px;
+  }
+  
+}
+
 
 /************ Banner Css ************/
 
-.banner-container{
-  height: 107%;
+.banner-container {
+  height: 100%;
 }
 
 .banner {
@@ -311,7 +349,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   left: 0%;
   top: 0%;
-  width: auto;
+  width: 100%;
   height: 100%;
   /* Define a largura desejada para a div */
   max-height: 86vh;
@@ -341,12 +379,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
+
 .side-image-container img {
   position: relative;
   bottom: 13px;
   width: auto;
   height: 500px;
-  transform: translate(0px,120px);
+  transform: translate(0px, 120px);
 
 }
 
@@ -395,18 +434,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 12vh 0 100px;
   }
 
-.banner img {
-  display: none;
-}
+  .banner img {
+    display: none;
+  }
 
-.side-image-container {
-  position: absolute;
-}
+  .side-image-container {
+    position: absolute;
+  }
 
-.banner .video-container {
-  max-height: 75vh;
+  .banner .video-container {
+    max-height: 75vh;
 
-}
+  }
 
 
   .banner h1 {
@@ -557,6 +596,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
   background: #fff;
   border: 1px solid #121212;
+}
+
+@media (max-width: 992px) {
+  .project-title h4 {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+  }
+
+  .project-description p {
+    color: #767676;
+    font-size: .9em;
+
+  }
+
+  .project-techs p {
+    font-weight: 700;
+    font-size: .7rem;
+
+
+  }
+
+  .projects button {
+    font-size: .7em;
+    margin: 0px;
+
+  }
 }
 
 

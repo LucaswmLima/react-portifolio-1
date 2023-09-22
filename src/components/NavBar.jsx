@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/navbar/Logo.png";
 import navIcon1 from "../assets/img/navbar/nav-icon1.svg";
@@ -10,6 +10,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [navbarExpanded, setNavbarExpanded] = useState(false);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -25,18 +27,43 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    // Função para fechar a Navbar quando clicar fora dela
+    function handleOutsideClick(event) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setNavbarExpanded(false);
+      }
+    }
+
+    // Adicione um ouvinte de eventos para detectar cliques fora da Navbar
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    // Limpe o ouvinte de eventos quando o componente for desmontado
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
 
   return (
     <Router>
-      <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+      <Navbar
+        ref={navbarRef}
+        expanded={navbarExpanded}
+        expand="lg"
+        className={scrolled ? "scrolled" : ""}
+      >
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setNavbarExpanded(!navbarExpanded)}
+          >
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
