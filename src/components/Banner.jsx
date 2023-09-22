@@ -52,10 +52,11 @@ export const Banner = () => {
   }
   return (
     <section className="banner" id="home">
-      <Container className="banner-container">
-        <div className="video-container">
+      <div className="video-container">
         <video src={video1} autoPlay loop muted/>
         </div>
+      <Container className="banner-container">
+        
       
         <Row className="align-itens-center h-100">
           <Col xs={12} md={8} className="d-flex flex-column justify-content-between">
