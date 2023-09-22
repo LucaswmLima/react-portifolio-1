@@ -26,7 +26,7 @@ export const projectsList = [
   },
   {
     title: "Sistema Financeiro",
-    description: "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, simplificando a gestão financeira.",
+    description: "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, simplificando a gestão financeira. Dados de teste de Março a Maio de 2023",
     imgUrl: financialSystemImg,
     linkOnline: "https://sistema-financeiro-lw.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",

@@ -292,7 +292,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
   .navbar-collapse .navbar-text button{
     font-weight: 700;
-    color: #fff;
     border: 1px solid #fff;
     padding: 10px 18px;
     font-size: .8em;
@@ -312,6 +311,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   
   .navbar-collapse .social-icon a{
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar-collapse .social-icon a::before {
     width: 36px;
     height: 36px;
   }
