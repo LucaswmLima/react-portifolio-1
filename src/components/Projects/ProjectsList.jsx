@@ -14,13 +14,14 @@ import gradeCalculatorImg from "../../assets/img/projects/grade-calculator-img.p
 import gasCalculatorImg from "../../assets/img/projects/gas-calculator-img.png";
 import portifolio1 from "../../assets/img/projects/portifolio-1-img.png";
 import portifolio2 from "../../assets/img/projects/portifolio-2-img.png";
+import fastFoodImg from "../../assets/img/projects/fast-food-site.png";
 
 export const projectsList = [
   {
     title: "Fast Food Landing Page",
     description:
       "Projeto de Landing Page de FastFood com design clean e foco em eficiência. Destaque para imagens simplificadas, menu interativo e área de reserva, proporcionando uma experiência ágil e amigável para usuários.",
-    imgUrl: landingPage1Img,
+    imgUrl: fastFoodImg,
     linkOnline: "https://javascript-food-site.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-food-site",
     technologies: ["Javascript", "Figma"],

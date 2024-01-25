@@ -10,16 +10,16 @@
   --black-color: #000;
 
   /*Component colors*/
-  --main-bg-color: #121212;
-  --secondary-bg-color: #fbfbfd;
-  --navbar-color: #121212;
+  --main-bg-color: #000;
+  --secondary-bg-color: rgb(245, 245, 247);
+  --navbar-color: rgba(22, 22, 23, .8);
 
   /*Font colors*/
   --message-success-color: #008000;
   --message-alert-color: #ffff00;
   --banner-font-color: #fbfbfd;
   --white-font-color: #fbfbfb;
-  --black-font-color: #121212;
+  --black-font-color: #1d1d1f;
 
   /*Font sizes*/
   --banner-font-size: 70px;
@@ -106,6 +106,7 @@ p.danger {
 
 /************ Navbar Css ************/
 nav.navbar {
+  backdrop-filter: blur(20px);
   padding: 18px 0;
   position: fixed;
   width: 100%;
