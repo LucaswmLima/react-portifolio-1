@@ -17,39 +17,50 @@ import portifolio2 from "../../assets/img/projects/portifolio-2-img.png";
 
 export const projectsList = [
   {
-    title: "Landing Page Restaurante",
-    description: "Um site de restaurante que enfatiza a simplicidade e um design limpo. As imagens dos pratos são dispostas em foco para atrair os olhos dos consumidores e facilitar a escolha. ",
+    title: "Fast Food Landing Page",
+    description:
+      "Projeto de Landing Page de FastFood com design clean e foco em eficiência. Destaque para imagens simplificadas, menu interativo e área de reserva, proporcionando uma experiência ágil e amigável para usuários.",
+    imgUrl: landingPage1Img,
+    linkOnline: "https://javascript-food-site.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/javascript-food-site",
+    technologies: ["Javascript", "Figma"],
+  },
+  {
+    title: "Pastelaria Foodie",
+    description:
+      "Um site de restaurante que enfatiza a simplicidade e um design limpo. As imagens dos pratos são dispostas em foco para atrair os olhos dos consumidores e facilitar a escolha. ",
     imgUrl: landingPage1Img,
     linkOnline: "https://react-landingpage-1.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
-    technologies: ["React", "Javascript", "MUI"]
+    technologies: ["React", "Javascript", "MUI"],
   },
   {
     title: "Sistema Financeiro",
-    description: "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, simplificando a gestão financeira. Dados de teste de Março a Maio de 2023",
+    description:
+      "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, simplificando a gestão financeira. Dados de teste de Março a Maio de 2023",
     imgUrl: financialSystemImg,
     linkOnline: "https://sistema-financeiro-lw.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
-    technologies: ["React", "Typescript", "Chakra UI"]
+    technologies: ["React", "Typescript", "Chakra UI"],
   },
   {
     title: "Pokedex",
-    description: "Uma Pokedex interativa que utiliza a base de dados da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
+    description:
+      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
     imgUrl: pokedexImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
-    technologies: ["Javascript", "Rest API"]
+    technologies: ["Javascript", "Rest API"],
   },
   {
     title: "Previsão Do Tempo",
-    description: "Um site de previsão do tempo que fornece informações essenciais. Ele exibe a localização com coordenadas e nome da cidade, juntamente com previsões de uma semana inteira, incluindo temperaturas máximas e mínimas, condições meteorológicas e temperatura. ",
+    description:
+      "Um site de previsão do tempo que fornece informações essenciais. Ele exibe a localização com coordenadas e nome da cidade, juntamente com previsões de uma semana inteira, incluindo temperaturas máximas e mínimas, condições meteorológicas e temperatura. ",
     imgUrl: weatherSiteImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-weather-app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-weather-app",
-    technologies: ["Javascript", "Rest API"]
+    technologies: ["Javascript", "Rest API"],
   },
-  
-  
   {
     title: "TO-DO List",
     description: "Lista de tarefas desenvolvida em React com Typescript",
@@ -57,7 +68,6 @@ export const projectsList = [
     linkOnline: "https://todo-list-01.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
   },
-  
   {
     title: "Calculadora",
     description:
@@ -82,7 +92,8 @@ export const projectsList = [
   },
   {
     title: "LUCY Assistent",
-    description: "Assistente virtual para controle de estoque desenvolvido em Python",
+    description:
+      "Assistente virtual para controle de estoque desenvolvido em Python",
     imgUrl: lucyImg,
     linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/python-lucy-assistant",
@@ -121,6 +132,5 @@ export const projectsList = [
     imgUrl: portifolio2,
     linkOnline: "https://portfolio-lucaswilliam-2.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-portfolio",
-  }
-
+  },
 ];
