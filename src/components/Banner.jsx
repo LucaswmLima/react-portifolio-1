@@ -52,9 +52,6 @@ export const Banner = () => {
   }
   return (
     <section className="banner" id="home">
-      <div className="video-container">
-        <video src={video1} autoPlay loop muted/>
-        </div>
       <Container className="banner-container">
         
       

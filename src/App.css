@@ -1,6 +1,7 @@
 /************ Custom Font ************/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /************ Default Css ************/
 
@@ -10,8 +11,9 @@
   --black-color: #000;
 
   /*Component colors*/
-  --main-bg-color: #000;
-  --secondary-bg-color: rgb(245, 245, 247);
+  --main-bg-color: rgb(245, 245, 247);
+  --secondary-bg-color: #000;
+  --white-bg-color: #fff;
   --navbar-color: rgba(22, 22, 23, .8);
 
   /*Font colors*/
@@ -41,7 +43,7 @@ body {
   position: relative;
   background-color: var(--main-bg-color) !important;
   color: var(--white-color);
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 400;
 }
 
@@ -354,7 +356,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.3;
   translate: 0 100px;
   display: block;
-  width: 100%
+  width: 100%;
+  color: var(--black-font-color);
 }
 
 .banner .video-container {
@@ -372,7 +375,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
-  color: #fff;
+  color: var(--black-font-color);
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -394,9 +397,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .side-image-container img {
   position: relative;
-  bottom: 13px;
+  bottom: 11%;
   width: auto;
-  height: 500px;
+  height: 700px;
   transform: translate(0px, 120px);
 
 }
@@ -720,7 +723,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ About Css ************/
 
 .about {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--white-bg-color);
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -735,7 +738,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--main-bg-color);
   border-radius: 2.5rem;
   padding: 30px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
