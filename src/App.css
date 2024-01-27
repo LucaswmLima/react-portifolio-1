@@ -516,12 +516,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .projects .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  background-color: var(--main-bg-color) !important;
-  color: var(--secondary-bg-color) !important;
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--white-color) !important;
 }
 
 .projects .nav-pills .nav-link {
-  color: var(--main-bg-color) !important;
+  color: var(--black-font-color) !important;
 }
 
 .projects .nav-link:hover {
@@ -539,7 +539,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #fff;
   border-radius: 2.5rem;
   padding: 10px 20px;
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, .30);
   transition: all .3s cubic-bezier(0, 0, .5, 1);
   margin-top: -2rem;
   gap: 1rem;
@@ -550,7 +550,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: var(--main-bg-color);
   overflow: hidden;
   height: 30vw;
-  /* Defina a altura como 30% da largura da viewport */
 }
 
 .project-card-img {
@@ -558,15 +557,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
-  height: 100%;
+  width: 100%;
   z-index: 1;
-  margin: 0;
 }
 
+.project-card-img img {
+  height: 105%;
+}
+
+.project-card-container .row>.project-card-img {
+  max-width: none; /* Removido o limite de largura máximo */
+  padding-right: 0; /* Removido o padding direito */
+  padding-left: 0; /* Removido o padding esquerdo */
+  margin-top: 0; /* Removido o margin top */
+}
 .project-info {
   z-index: 2;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   background-color: var(--navbar-color);
   position: absolute;
   opacity: 0;
@@ -584,25 +591,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project-title h4 {
-  color: #2d2e32;
+  color: var(--white-color);
   font-size: 1.7rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   text-transform: uppercase;
   text-align: center;
 }
 
 .project-description p {
-  color: #767676;
-  font-size: 1.3rem;
+  color: var(--white-color);
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
   text-transform: none;
+  opacity: 0.80;
+  padding: 2rem;
 }
 
 .project-techs p {
-  color: #000000;
+  color: var(--white-color);
   font-weight: 700;
   font-size: 1.1rem;
+  
 }
 .background-image-right {
   top: 20%;
@@ -667,9 +678,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills Css ************/
 
 .skills {
-  background-color: var(--secondary-bg-color);
-  padding: 0 0 20px 0;
+  background-color: var(--main-bg-color);
+  padding-top: 20px;
+  padding-bottom: 55px;
   position: relative;
+  margin-top: 25px;
 }
 
 .skills h2 {
@@ -685,7 +698,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skills-box {
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
   border-radius: 2.5rem;
   padding: 30px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
@@ -852,7 +865,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
-  padding: 60px 0 200px 0;
+  padding: 60px 0 100px 0;
+  background-color: var(--secondary-bg-color);
 }
 
 .contact img {
@@ -869,9 +883,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input,
 .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
+  background: rgba(252, 248, 248, 0.1);
+  border: 1px solid rgba(252, 248, 248, 0.1);
   color: #fff;
   margin: 0 0 8px 0;
   padding: 18px 26px;
@@ -879,12 +892,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
+  resize: none;
 }
 
 .contact form input:focus,
 .contact form textarea:focus {
-  background: #fff;
+  background: rgb(57, 57, 57);
   color: var(--main-bg-color);
+  
 }
 
 .contact form input::placeholder,
@@ -941,19 +956,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 
 .footer-logo {
-  width: 13%;
+  width: 10%;
   height: auto;
 }
 
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 10px 0;
+  background-color: var(--navbar-color);
+  margin-top: 4vh;
 }
 
 
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: var(--black-font-color);
   letter-spacing: 0.5px;
   margin-top: 20px;
 }

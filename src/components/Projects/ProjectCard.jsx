@@ -8,7 +8,7 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
 
   return (
     <Container className="project-card-container">
-    <Row className=" project-card justify-content-center">
+    <Row  className=" project-card justify-content-center">
         <div className="project-card-img">
           <img src={imgUrl} />
         </div>
