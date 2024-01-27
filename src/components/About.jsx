@@ -7,38 +7,38 @@ export const About = () => {
 
   return (
     <section className="about" id="about">
-      <Container>
-        <Row>
-          <Col>
-            <div className="about-box" id="about-box">
-              <h2>Sobre Mim</h2>
-              <div className="container about__container">
-                <div className="about__me">
-                  <div className="about__me-image">
-                    <img src={ME} alt="About Image" />
+        <Container>
+          <Row>
+            <Col>
+              <div className="about-box" id="about-box">
+                <h2>Sobre Mim</h2>
+                <div className="container about__container">
+                  <div className="about__me">
+                    <div className="about__me-image">
+                      <img src={ME} alt="About Image" />
+                    </div>
                   </div>
-                </div>
-                <div className="about__content">
-                  <p>
-                    Meu nome é Lucas William, e sou um entusiasta da tecnologia
-                    e da ciência. Nos meus momentos livres, me divirto jogando
-                    games e assistindo vídeos sobre astronomia, fisica e
-                    curiosidades. Atualmente, estou em busca de uma oportunidade
-                    na área de desenvolvimento, onde posso aplicar meu
-                    conhecimento para criar soluções inovadoras.
+                  <div className="about__content">
+                    <p>
+                      Meu nome é Lucas William, e sou um entusiasta da
+                      tecnologia e da ciência. Nos meus momentos livres, me
+                      divirto jogando games e assistindo vídeos sobre
+                      astronomia, fisica e curiosidades. Atualmente, estou em
+                      busca de uma oportunidade na área de desenvolvimento, onde
+                      posso aplicar meu conhecimento para criar soluções
+                      inovadoras.
                     </p>
                     <p>
                       Se estiver interessado em discutir oportunidades de
                       emprego ou colaborações profissionais, fique à vontade
                       para entrar em contato comigo.
                     </p>
-                  
+                  </div>
                 </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+          </Row>
+        </Container>
     </section>
   );
 };

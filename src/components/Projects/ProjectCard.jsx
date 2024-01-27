@@ -7,14 +7,12 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
   const showOnlyOneButton = isOnlineLinkEmpty || isGitHubLinkEmpty;
 
   return (
-    <Container>
+    <Container className="project-card-container">
     <Row className=" project-card justify-content-center">
-      <Col className="justify-content-center" md={6} sm={12} >
         <div className="project-card-img">
           <img src={imgUrl} />
         </div>
-      </Col>
-      <Col className="justify-content-center" md={6} sm={12}>
+      <Col className="project-info justify-content-center" md={6} sm={12}>
         <Row className="project-title"> <h4>{title}</h4></Row>
         <Row className="project-description"><p>{description}</p></Row>
         <Row md="auto" sm="auto" className="project-techs justify-content-center flex-nowrap">
