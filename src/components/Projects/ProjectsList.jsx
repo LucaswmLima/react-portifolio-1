@@ -47,7 +47,7 @@ export const projectsList = [
   {
     title: "Pokedex",
     description:
-      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
+      "Uma Pokedex interativa que utiliza a base de dad34os da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
     imgUrl: pokedexImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
