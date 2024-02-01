@@ -554,15 +554,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card-img {
   overflow: hidden;
+  left: 20%;
+  bottom: -10%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.project-card-img img {
-  height: 105%;
+  z-index: 101;
+  width: 60% !important;
+  border-radius: 20px;
 }
 
 .project-card-container .row>.project-card-img {
@@ -572,26 +569,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0; /* Removido o margin top */
 }
 .project-info {
-  z-index: 2;
-  backdrop-filter: blur(20px);
-  background-color: var(--navbar-color);
-  position: absolute;
-  opacity: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-  transform: translateX(150%);
-  /* Inicialmente, fora do card à direita */
 }
 
-.project-card:hover .project-info {
-  opacity: 1;
-  transform: translateX(50%);
-  /* Quando o mouse está sobre o card, movemos para a esquerda */
-}
 
 .project-title h4 {
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 1.7rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
