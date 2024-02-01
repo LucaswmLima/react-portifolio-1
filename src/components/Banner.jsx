@@ -4,9 +4,6 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { Link } from "react-scroll";
 import CV from "../../src/assets/lucas-lima-CV.pdf";
 import ME from "../assets/img/home/me.svg"
-import video1 from "../assets/img/home/banner-bg.mp4"
-
-
 
 export const Banner = () => {
 
@@ -15,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Front-end Developer"];
+  const toRotate = ["Full-Stack Developer"];
   const period = 1000;
 
   useEffect(() => {
