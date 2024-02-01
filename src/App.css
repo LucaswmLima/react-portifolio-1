@@ -22,6 +22,7 @@
   --banner-font-color: #fbfbfd;
   --white-font-color: #fbfbfb;
   --black-font-color: #1d1d1f;
+  --link-font-color: #06c;
 
   /*Font sizes*/
   --banner-font-size: 70px;
@@ -546,82 +547,80 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project-card {
-  position: relative;
   background-color: var(--main-bg-color);
-  overflow: hidden;
-  height: 30vw;
+  display: flex;
+  align-items: center;
 }
 
-.project-card-img {
-  overflow: hidden;
-  left: 20%;
-  bottom: -10%;
-  position: absolute;
-  z-index: 101;
-  width: 60% !important;
-  border-radius: 20px;
-}
-
-.project-card-container .row>.project-card-img {
-  max-width: none; /* Removido o limite de largura máximo */
-  padding-right: 0; /* Removido o padding direito */
-  padding-left: 0; /* Removido o padding esquerdo */
-  margin-top: 0; /* Removido o margin top */
-}
-.project-info {
+.project-card-container {
   width: 100%;
-  height: 100%;
+  overflow: hidden;
 }
 
+.project-img-container{
+  padding-top: 20px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.project-img-container img{
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-card-info {
+  width: 100%;
+  /* Alterado para ocupar a largura total do card */
+  padding: 20px;
+  z-index: 1;
+  margin-bottom: 0px !important;
+  padding-bottom: 0 !important;
+}
 
 .project-title h4 {
   color: var(--black-color);
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  font-size: 2em;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
 }
 
 .project-description p {
-  color: var(--white-color);
-  font-size: 1rem;
+  color: var(--black-font-color);
+  font-size: 1em;
+  /* Alterado para 1.7% da largura da tela */
   font-weight: 500;
   text-align: center;
-  text-transform: none;
   opacity: 0.80;
-  padding: 2rem;
+  font-weight: 400;
 }
 
 .project-techs p {
-  color: var(--white-color);
+  color: var(--black-color);
   font-weight: 700;
-  font-size: 1.1rem;
-  
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
+  font-size: 1.2em;
+  margin-bottom: 0px !important;
+  /* Alterado para 1.1% da largura da tela */
 }
 
 .projects-buttons {
   padding: 15px 15px 0 15px;
-  margin-top: 30px;
 }
 
 .projects button {
   width: 100%;
   font-weight: 400;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
+  padding: 6px 5px;
   color: #fff;
   background: #121212;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 12px;
+  font-size: .7em;
+  /* Alterado para 2% da largura da tela */
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -631,7 +630,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #fff;
   border: 1px solid #121212;
 }
-
 @media (max-width: 992px) {
   .project-title h4 {
     font-size: 1.1em;

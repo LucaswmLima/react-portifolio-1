@@ -18,9 +18,9 @@ import fastFoodImg from "../../assets/img/projects/fast-food-site.png";
 
 export const projectsList = [
   {
-    title: "Fast Food Landing Page",
+    title: "Food Max",
     description:
-      "Projeto de Landing Page de FastFood com design clean e foco em eficiência. Destaque para imagens simplificadas, menu interativo e área de reserva, proporcionando uma experiência ágil e amigável para usuários.",
+      "Landing Page de Fast-Food com design clean, menu interativo e foco em eficiência.",
     imgUrl: fastFoodImg,
     linkOnline: "https://javascript-food-site.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-food-site",
@@ -29,7 +29,7 @@ export const projectsList = [
   {
     title: "Pastelaria Foodie",
     description:
-      "Um site de restaurante que enfatiza a simplicidade e um design limpo. As imagens dos pratos são dispostas em foco para atrair os olhos dos consumidores e facilitar a escolha. ",
+      "Site de um restaurante, que destaca a simplicidade, com foco nas imagens dos pratos para atrair os consumidores.",
     imgUrl: landingPage1Img,
     linkOnline: "https://react-landingpage-1.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
@@ -38,7 +38,7 @@ export const projectsList = [
   {
     title: "Sistema Financeiro",
     description:
-      "Uma página de sistema financeiro que organiza despesas e receitas por categoria para um acompanhamento fácil. A funcionalidade de troca de mês oferece uma visão abrangente ao longo do tempo, simplificando a gestão financeira. Dados de teste de Março a Maio de 2023",
+      "Sistema financeiro que categoriza despesas e receitas para fácil acompanhamento. (Dados de teste de março a maio de 2023).",
     imgUrl: financialSystemImg,
     linkOnline: "https://sistema-financeiro-lw.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
@@ -47,7 +47,7 @@ export const projectsList = [
   {
     title: "Pokedex",
     description:
-      "Uma Pokedex interativa que utiliza a base de dad34os da PokeAPI para permitir que os usuários pesquisem Pokémon por número ou nome, exibindo detalhes abrangentes, incluindo status, características e locais de encontro.",
+      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI.",
     imgUrl: pokedexImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
@@ -56,7 +56,7 @@ export const projectsList = [
   {
     title: "Previsão Do Tempo",
     description:
-      "Um site de previsão do tempo que fornece informações essenciais. Ele exibe a localização com coordenadas e nome da cidade, juntamente com previsões de uma semana inteira, incluindo temperaturas máximas e mínimas, condições meteorológicas e temperatura. ",
+      "Site de previsão do tempo que fornece informações essenciais sobre o clima. ",
     imgUrl: weatherSiteImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-weather-app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-weather-app",

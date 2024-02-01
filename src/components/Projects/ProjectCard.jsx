@@ -8,15 +8,9 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
 
   return (
     <Container className="project-card-container">
-      <Row className=" project-card justify-content-center">
-        <Col className="project-info justify-content-center" md={6} sm={12}>
-          <Row>
-            <div className="project-card-img">
-              <img src={imgUrl} />
-            </div>
-          </Row>
+      <Row className="project-card justify-content-center">
+        <Col className="project-card-info" md={6} sm={12}>
           <Row className="project-title">
-            {" "}
             <h4>{title}</h4>
           </Row>
           <Row className="project-description">
@@ -39,7 +33,7 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
           </Row>
 
           <Row
-            className={` align-items-end projects-buttons ${
+            className={`align-items-end projects-buttons ${
               showOnlyOneButton ? "justify-content-center" : ""
             }`}
           >
@@ -57,6 +51,11 @@ export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnli
                 </a>
               </Col>
             )}
+          </Row>
+          <Row className="project-card-img">
+            <div className="project-img-container">
+              <img src={imgUrl} alt="Project" />
+            </div>
           </Row>
         </Col>
       </Row>
