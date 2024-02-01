@@ -27,6 +27,15 @@ export const projectsList = [
     technologies: ["Javascript", "Figma"],
   },
   {
+    title: "Pokedex",
+    description:
+      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI.",
+    imgUrl: pokedexImg,
+    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
+    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
+    technologies: ["Javascript", "Rest API"],
+  },
+  {
     title: "Pastelaria Foodie",
     description:
       "Site de um restaurante, que destaca a simplicidade, com foco nas imagens dos pratos para atrair os consumidores.",
@@ -44,15 +53,7 @@ export const projectsList = [
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
     technologies: ["React", "Typescript", "Chakra UI"],
   },
-  {
-    title: "Pokedex",
-    description:
-      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI.",
-    imgUrl: pokedexImg,
-    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
-    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
-    technologies: ["Javascript", "Rest API"],
-  },
+
   {
     title: "Previsão Do Tempo",
     description:
