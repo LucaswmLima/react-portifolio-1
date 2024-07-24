@@ -17,6 +17,26 @@ import portifolio2 from "../../assets/img/projects/portifolio-2-img.png";
 import fastFoodImg from "../../assets/img/projects/fast-food-site.png";
 
 export const projectsList = [
+  
+  {
+    title: "Xentry Portal Automation",
+    description:
+      "Sistema automatizado para coleta, pré-processamento e geração de planilhas formatadas a partir de dados online",
+    imgUrl: "https://raw.githubusercontent.com/LucaswmLima/python-xentry-automation/main/assets/1.png",
+    linkOnline: "",
+    linkGitHub: "https://github.com/LucaswmLima/python-xentry-automation",
+    technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Selenium"],
+  },
+  
+  {
+    title: "React Hook Form",
+    description:
+      "Aplicativo que compara dois tipos de formulários: Um construído de forma HTML padrão e outro com Hook Form",
+    imgUrl: "https://raw.githubusercontent.com/LucaswmLima/react-forms/main/src/assets/img2.png",
+    linkOnline: "https://react-hook-form-1.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/react-hook-form",
+    technologies: ["Javascript", "React", "Hook Form"],
+  },
   {
     title: "Food Max",
     description:
@@ -34,6 +54,24 @@ export const projectsList = [
     linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
     technologies: ["Javascript", "Rest API"],
+  },
+  {
+    title: "Linear Regressor",
+    description:
+      "Aplicativo que realiza regressão linear baseado em arquivo CSV",
+    imgUrl: "https://raw.githubusercontent.com/LucaswmLima/python-linear-regressor/main/assets/4.png",
+    linkOnline: "",
+    linkGitHub: "https://github.com/LucaswmLima/python-logistic-regressor",
+    technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Scikit-Learn"],
+  },
+  {
+    title: "Logistic Regressor",
+    description:
+      "Aplicativo que realiza regressão logística baseado em arquivo CSV",
+    imgUrl: "https://raw.githubusercontent.com/LucaswmLima/python-logistic-regressor/main/assets/3.png",
+    linkOnline: "",
+    linkGitHub: "https://github.com/LucaswmLima/python-logistic-regressor",
+    technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Scikit-Learn"],
   },
   {
     title: "Pastelaria Foodie",
