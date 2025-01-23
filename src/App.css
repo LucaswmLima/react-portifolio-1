@@ -589,6 +589,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
+  min-height: calc(2 * 1em); /* 2 linhas com 1.5em de altura por linha */
+  line-height: 1em; /* Altura da linha */
 }
 
 .project-description p {
@@ -701,8 +703,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-language-icon {
-  width: 200px;
+  width: 50px;
   height: auto;
+  margin: 10px 20px 10px 10px;
 }
 
 .progress {
@@ -728,6 +731,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .react-multiple-carousel__arrow--right,
 .react-multiple-carousel__arrow--left {
   transform: translateY(-25px);
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skill-item{
+  color: #fff;
 }
 
 @media (max-width: 992px) {

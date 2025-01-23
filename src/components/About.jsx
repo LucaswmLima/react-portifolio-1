@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import ME from "../assets/img/about/me-about.jpg";
+import ME from "../assets/img/about/me-about.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 export const About = () => {
