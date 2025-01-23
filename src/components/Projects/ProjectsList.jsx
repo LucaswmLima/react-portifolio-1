@@ -17,9 +17,10 @@ import portifolio2 from "../../assets/img/projects/portifolio-2-img.png";
 import fastFoodImg from "../../assets/img/projects/fast-food-site.png";
 import meterReaderImg from "../../assets/img/projects/meter-reader-img.png";
 import xentryAutomationImg from "../../assets/img/projects/xentry-automation-img.png";
-import hookFormImg from "../../assets/img/projects/xentry-automation-img.png";
+import hookFormImg from "../../assets/img/projects/hook-form-img.png";
 import linearRegressorImg from "../../assets/img/projects/linear-regressor-img.png";
 import logisticRegressorImg from "../../assets/img/projects/logistic-regressor-img.png";
+import reduxProfileImg from "../../assets/img/projects/profile-redux-img.png";
 
 export const projectsList = [
   {
@@ -52,23 +53,24 @@ export const projectsList = [
     technologies: ["Javascript", "React", "Hook Form"],
   },
   {
-    title: "Food Max",
+    title: "Redux Profile App",
     description:
-      "Landing Page de Fast-Food com design clean, menu interativo e foco em eficiência.",
-    imgUrl: fastFoodImg,
-    linkOnline: "https://javascript-food-site.vercel.app",
-    linkGitHub: "https://github.com/LucaswmLima/javascript-food-site",
-    technologies: ["Javascript", "Figma"],
+      "Aplicativo desenvolvido para explorar o uso do Redux no controle de estados globais em aplicações complexas.",
+    imgUrl: reduxProfileImg,
+    linkOnline: "https://react-redux-profile-app.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/react-profile-app",
+    technologies: ["Javascript", "React", "Redux"],
   },
   {
-    title: "Pokedex",
+    title: "Sistema Financeiro",
     description:
-      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI.",
-    imgUrl: pokedexImg,
-    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
-    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
-    technologies: ["Javascript", "Rest API"],
+      "Sistema financeiro que categoriza despesas e receitas. (Dados de teste de março a maio de 2023).",
+    imgUrl: financialSystemImg,
+    linkOnline: "https://sistema-financeiro-lw.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
+    technologies: ["React", "Typescript", "Chakra UI"],
   },
+
   {
     title: "Linear Regressor",
     description:
@@ -88,6 +90,15 @@ export const projectsList = [
     technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Scikit-Learn"],
   },
   {
+    title: "Food Max",
+    description:
+      "Landing Page de Fast-Food com design clean, menu interativo e foco em eficiência.",
+    imgUrl: fastFoodImg,
+    linkOnline: "https://javascript-food-site.vercel.app",
+    linkGitHub: "https://github.com/LucaswmLima/javascript-food-site",
+    technologies: ["Javascript", "Figma"],
+  },
+  {
     title: "Pastelaria Foodie",
     description:
       "Site de um restaurante, que destaca a simplicidade, com foco nas imagens dos pratos para atrair os consumidores.",
@@ -95,15 +106,6 @@ export const projectsList = [
     linkOnline: "https://react-landingpage-1.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
     technologies: ["React", "Javascript", "MUI"],
-  },
-  {
-    title: "Sistema Financeiro",
-    description:
-      "Sistema financeiro que categoriza despesas e receitas. (Dados de teste de março a maio de 2023).",
-    imgUrl: financialSystemImg,
-    linkOnline: "https://sistema-financeiro-lw.vercel.app",
-    linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
-    technologies: ["React", "Typescript", "Chakra UI"],
   },
 
   {
@@ -123,9 +125,17 @@ export const projectsList = [
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
   },
   {
-    title: "Calculadora",
+    title: "Pokedex",
     description:
-      "Calculadora desenvolvida em Javascript.",
+      "Uma Pokedex interativa que utiliza a base de dados da PokeAPI.",
+    imgUrl: pokedexImg,
+    linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
+    linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
+    technologies: ["Javascript", "Rest API"],
+  },
+  {
+    title: "Calculadora",
+    description: "Calculadora desenvolvida em Javascript.",
     imgUrl: calculatorImg,
     linkOnline: "https://lucaswmlima.github.io/javascript-calculator",
     linkGitHub: "https://github.com/LucaswmLima/javascript-calculator",
