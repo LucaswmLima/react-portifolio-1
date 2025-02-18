@@ -28,7 +28,7 @@ export const projectsList = [
     description:
       "Sistema Full Stack para medição de medidores por leitura de imagem e integração com LLM AI.",
     imgUrl: meterReaderImg,
-    linkOnline: "",
+    linkOnline: "https://meter-read-managment-tool-client.onrender.com",
     linkGitHub: "https://github.com/LucaswmLima/meter-reader",
     technologies: ["Node.Js", "Typescript", "React", "LLM", "Axios"],
   },
