@@ -8,9 +8,9 @@ import cLanguage from "../../assets/img/skills/c.svg";
 import flutter from "../../assets/img/skills/flutter.svg";
 import nodeJs from "../../assets/img/skills/nodejs.svg";
 import java from "../../assets/img/skills/java.svg";
-import sqlserver from "../../assets/img/skills/flutter.svg";
-import mongodb from "../../assets/img/skills/nodejs.svg";
-import postgresql from "../../assets/img/skills/java.svg";
+import sqlserver from "../../assets/img/skills/microsoft-sql-server.svg";
+import mongodb from "../../assets/img/skills/mongodb-icon.svg";
+import postgresql from "../../assets/img/skills/postgresql.svg";
 
 export const SkillsList = [
   { title: "HTML", icon: html5, category: "Frontend" },
