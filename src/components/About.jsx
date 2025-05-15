@@ -20,18 +20,10 @@ export const About = () => {
                   </div>
                   <div className="about__content">
                     <p>
-                      Meu nome é Lucas William, e sou um entusiasta da
-                      tecnologia e da ciência. Nos meus momentos livres, me
-                      divirto jogando games e assistindo vídeos sobre
-                      astronomia, fisica e curiosidades. Atualmente, estou em
-                      busca de uma oportunidade na área de desenvolvimento, onde
-                      posso aplicar meu conhecimento para criar soluções
-                      inovadoras.
+                      Meu nome é Lucas William, sou apaixonado por tecnologia e ciência. Nos meus momentos livres, gosto de jogar, explorar conteúdos sobre astronomia, física e curiosidades do universo. Tenho experiência com desenvolvimento e estou sempre em busca de novos desafios onde eu possa aplicar meu conhecimento para criar soluções criativas e eficientes.
                     </p>
                     <p>
-                      Se estiver interessado em discutir oportunidades de
-                      emprego ou colaborações profissionais, fique à vontade
-                      para entrar em contato comigo.
+                      Estou sempre aberto a trocar ideias sobre tecnologia, projetos ou colaborações. Sinta-se à vontade para entrar em contato!
                     </p>
                   </div>
                 </div>
