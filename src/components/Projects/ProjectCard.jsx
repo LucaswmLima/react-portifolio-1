@@ -57,7 +57,7 @@ export const ProjectCard = ({
             {!isOnlineLinkEmpty && (
               <Col xs={6} md={6}>
                 <a href={linkOnline} target="_blank" rel="noopener noreferrer">
-                  <Button>Ver Online</Button>
+                  <Button>Online</Button>
                 </a>
               </Col>
             )}

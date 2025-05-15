@@ -124,6 +124,7 @@ export const projectsList = [
     imgUrl: todoListImg,
     linkOnline: "https://todo-list-01.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
+    technologies: ["React", "Javascript"],
   },
   {
     title: "Pokedex",

@@ -552,6 +552,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: var(--main-bg-color);
   display: flex;
   align-items: center;
+  height: 50vh;
 }
 
 .project-card-container {
@@ -575,7 +576,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card-info {
   width: 100%;
-  /* Alterado para ocupar a largura total do card */
   padding: 20px;
   z-index: 1;
   margin-bottom: 0px !important;
@@ -589,15 +589,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  min-height: calc(2 * 1em); /* 2 linhas com 1.5em de altura por linha */
-  line-height: 1em; /* Altura da linha */
+  min-height: calc(2 * 1em);
+  line-height: 1em;
 }
 
 .project-description p {
   color: var(--black-font-color);
   font-size: 1em;
-  /* Alterado para 1.7% da largura da tela */
-  font-weight: 500;
   text-align: center;
   opacity: 0.80;
   font-weight: 400;
@@ -608,7 +606,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   font-size: 1.2em;
   margin-bottom: 0px !important;
-  /* Alterado para 1.1% da largura da tela */
 }
 
 .projects-buttons {
