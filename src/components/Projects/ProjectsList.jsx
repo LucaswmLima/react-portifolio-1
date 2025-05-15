@@ -21,10 +21,21 @@ import hookFormImg from "../../assets/img/projects/hook-form-img.png";
 import linearRegressorImg from "../../assets/img/projects/linear-regressor-img.png";
 import logisticRegressorImg from "../../assets/img/projects/logistic-regressor-img.png";
 import reduxProfileImg from "../../assets/img/projects/profile-redux-img.png";
+import kayadocImg from "../../assets/img/projects/kayadoc-img.png";
 
 export const projectsList = [
   {
-    title: "Meter Reader",
+    title: "Kayadoc",
+    description:
+      "Sistema Full Stack desenvolvido para uma empresa especializada na gestão de médicos e consultas.",
+    imgUrl: kayadocImg,
+    linkOnline: "https://github.com/LucaswmLima/kayadoc",
+    linkGitHub: "https://github.com/LucaswmLima/kayadoc",
+    technologies: ["Python", "Django", "SQLite", "Tailwind CSS", "Docker"],
+    bgColor: ["#eafaf1","white"]
+  },
+  {
+    title: "Measure Manager",
     description:
       "Sistema Full Stack para medição de medidores por leitura de imagem e integração com LLM AI.",
     imgUrl: meterReaderImg,
