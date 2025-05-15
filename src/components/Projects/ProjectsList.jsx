@@ -29,7 +29,7 @@ export const projectsList = [
     description:
       "Sistema Full Stack desenvolvido para uma empresa especializada na gestão de médicos e consultas.",
     imgUrl: kayadocImg,
-    linkOnline: "https://github.com/LucaswmLima/kayadoc",
+    linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/kayadoc",
     technologies: ["Python", "Django", "SQLite", "Tailwind CSS", "Docker"],
     bgColor: ["#eafaf1","white"]
