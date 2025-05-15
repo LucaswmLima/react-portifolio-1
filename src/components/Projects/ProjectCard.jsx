@@ -1,14 +1,31 @@
 import React, { useState } from "react";
 import { Col, Row, Button, Container } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, technologies, imgUrl, linkOnline, linkGitHub }) => {
+export const ProjectCard = ({
+  title,
+  description,
+  technologies,
+  imgUrl,
+  linkOnline,
+  linkGitHub,
+  bgColor,
+}) => {
   const isOnlineLinkEmpty = !linkOnline;
   const isGitHubLinkEmpty = !linkGitHub;
   const showOnlyOneButton = isOnlineLinkEmpty || isGitHubLinkEmpty;
 
   return (
     <Container className="project-card-container">
-      <Row className="project-card justify-content-center">
+      <Row
+        className="project-card justify-content-center"
+        style={
+          bgColor
+            ? {
+                backgroundImage: `linear-gradient(${bgColor[0]}, ${bgColor[1]})`,
+              }
+            : {}
+        }
+      >
         <Col className="project-card-info" md={6} sm={12}>
           <Row className="project-title">
             <h4>{title}</h4>
