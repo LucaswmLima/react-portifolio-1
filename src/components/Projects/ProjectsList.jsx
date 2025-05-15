@@ -35,13 +35,14 @@ export const projectsList = [
   },
 
   {
-    title: "Xentry Portal Automation",
+    title: "Xentry Portal",
     description:
       "Sistema automatizado para coleta, pré-processamento e geração de planilhas formatadas a partir de dados online",
     imgUrl: xentryAutomationImg,
     linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/python-xentry-automation",
     technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Selenium"],
+    bgColor: ["#808b96","white"]
   },
 
   {
@@ -52,6 +53,7 @@ export const projectsList = [
     linkOnline: "https://react-hook-form-1.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-hook-form",
     technologies: ["Javascript", "React", "Hook Form"],
+    bgColor: ["#d6eaf8","white"]
   },
   {
     title: "Redux Profile App",
@@ -70,6 +72,7 @@ export const projectsList = [
     linkOnline: "https://sistema-financeiro-lw.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-financial-system",
     technologies: ["React", "Typescript", "Chakra UI"],
+    bgColor: ["#d6eaf8","white"]
   },
 
   {
@@ -80,6 +83,7 @@ export const projectsList = [
     linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/python-logistic-regressor",
     technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Scikit-Learn"],
+    bgColor: ["#fdedec","white"]
   },
   {
     title: "Logistic Regressor",
@@ -89,6 +93,7 @@ export const projectsList = [
     linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/python-logistic-regressor",
     technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Scikit-Learn"],
+    bgColor: ["#fdedec","white"]
   },
   {
     title: "Food Max",
@@ -98,6 +103,7 @@ export const projectsList = [
     linkOnline: "https://javascript-food-site.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-food-site",
     technologies: ["Javascript", "Figma"],
+    bgColor: ["#fcf3cf","#d5d8dc "]
   },
   {
     title: "Pastelaria Foodie",
@@ -107,6 +113,7 @@ export const projectsList = [
     linkOnline: "https://react-landingpage-1.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-landingpage-1",
     technologies: ["React", "Javascript", "MUI"],
+    bgColor: ["#f9e79f","white"]
   },
 
   {
@@ -117,6 +124,7 @@ export const projectsList = [
     linkOnline: "https://lucaswmlima.github.io/javascript-weather-app",
     linkGitHub: "https://github.com/LucaswmLima/javascript-weather-app",
     technologies: ["Javascript", "Rest API"],
+    bgColor: ["#ebf5fb","#d5d8dc"]
   },
   {
     title: "TO-DO List",
@@ -125,6 +133,7 @@ export const projectsList = [
     linkOnline: "https://todo-list-01.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
     technologies: ["React", "Javascript"],
+    bgColor: ["#808b96","white"]
   },
   {
     title: "Pokedex",
@@ -134,6 +143,7 @@ export const projectsList = [
     linkOnline: "https://lucaswmlima.github.io/javascript-pokedex",
     linkGitHub: "https://github.com/LucaswmLima/javascript-pokedex",
     technologies: ["Javascript", "Rest API"],
+    bgColor: ["#c0392b","white"]
   },
   {
     title: "Calculadora",
