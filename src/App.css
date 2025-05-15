@@ -795,8 +795,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about__me-image {
-  width: 20vw;
-  height: 20vw;
+
   border-radius: 2.5rem;
   overflow: hidden;
 }
