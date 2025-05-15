@@ -42,7 +42,7 @@ export const projectsList = [
     linkOnline: "https://meter-read-managment-tool-client.onrender.com",
     linkGitHub: "https://github.com/LucaswmLima/meter-reader",
     technologies: ["Node.Js", "Typescript", "React", "LLM", "Axios"],
-    bgColor: ["#eafaf1","white"]
+    bgColor: ["#d5d8dc","white"]
   },
 
   {
@@ -53,7 +53,7 @@ export const projectsList = [
     linkOnline: "",
     linkGitHub: "https://github.com/LucaswmLima/python-xentry-automation",
     technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Selenium"],
-    bgColor: ["#808b96","white"]
+    bgColor: ["#d5d8dc","white"]
   },
 
   {
