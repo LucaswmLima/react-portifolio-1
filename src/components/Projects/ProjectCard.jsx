@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row, Button, Container } from "react-bootstrap";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export const ProjectCard = ({
   title,
@@ -13,6 +15,7 @@ export const ProjectCard = ({
   const isOnlineLinkEmpty = !linkOnline;
   const isGitHubLinkEmpty = !linkGitHub;
   const showOnlyOneButton = isOnlineLinkEmpty || isGitHubLinkEmpty;
+  const [open, setOpen] = useState(false); // já está aqui!
 
   return (
     <Container className="project-card-container">
@@ -30,9 +33,11 @@ export const ProjectCard = ({
           <Row className="project-title">
             <h4>{title}</h4>
           </Row>
+
           <Row className="project-description">
             <p>{description}</p>
           </Row>
+
           <Row
             md="auto"
             sm="auto"
@@ -69,13 +74,29 @@ export const ProjectCard = ({
               </Col>
             )}
           </Row>
+
           <Row className="project-card-img">
             <div className="project-img-container">
-              <img src={imgUrl} alt="Project" />
+              <img
+                src={imgUrl}
+                alt="Project"
+                style={{ cursor: "zoom-in" }}
+                onClick={() => setOpen(true)}
+              />
             </div>
           </Row>
         </Col>
       </Row>
+
+      {/* Lightbox */}
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={[{ src: imgUrl }]}
+        carousel={{ finite: true, preload: 0 }}
+        controller={{ closeOnPullDown: true, closeOnBackdropClick: true }}
+        styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.9)" } }}
+      />
     </Container>
   );
 };

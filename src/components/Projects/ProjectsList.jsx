@@ -133,7 +133,6 @@ export const projectsList = [
     linkOnline: "https://todo-list-01.vercel.app",
     linkGitHub: "https://github.com/LucaswmLima/react-todo-list",
     technologies: ["React", "Javascript"],
-    bgColor: ["#808b96","white"]
   },
   {
     title: "Pokedex",
